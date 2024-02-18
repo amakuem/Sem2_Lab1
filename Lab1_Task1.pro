@@ -10,10 +10,12 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    move_rec.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    move_rec.h
 
 FORMS += \
     mainwindow.ui
