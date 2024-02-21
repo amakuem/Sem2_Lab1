@@ -1,12 +1,12 @@
 #include "move_rec.h"
 
 Move_rec::Move_rec(QWidget *parent): QWidget(parent){
-    setFixedSize(200,350);
+    setFixedSize(200,450);
 }
 
 void Move_rec::paintEvent(QPaintEvent *){
     QPainter painter(this);
-    QRect Rectungle(0, 0, 200, 350);
+    QRect Rectungle(0, 0, 200, 450);
     painter.fillRect(Rectungle, Qt::darkGreen);
 }
 

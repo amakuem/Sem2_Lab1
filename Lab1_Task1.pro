@@ -11,11 +11,15 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    move_rec.cpp
+    move_rec.cpp \
+    soldier.cpp \
+    upperhand.cpp
 
 HEADERS += \
     mainwindow.h \
-    move_rec.h
+    move_rec.h \
+    soldier.h \
+    upperhand.h
 
 FORMS += \
     mainwindow.ui

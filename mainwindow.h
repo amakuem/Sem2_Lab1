@@ -7,6 +7,8 @@
 #include <QPropertyAnimation>
 #include <QKeyEvent>
 #include <move_rec.h>
+#include "soldier.h"
+#include "upperhand.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -25,12 +27,18 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    Move_rec *Rectungle;
+    //Move_rec *Rectungle;
+    soldier *sold;
+    upperhand *uphand;
+
 protected:
     void paintEvent(QPaintEvent*) override;
+
+
 private slots:
     void on_pushButton_clicked();
     void on_pushButton_2_clicked();
+    void on_pushButton_3_clicked();
 };
 
 
