@@ -4,8 +4,10 @@
 #include <QWidget>
 #include <QPaintEvent>
 #include <QPainter>
+#include <QTimer>
 #include <QPropertyAnimation>
 #include <QGraphicsItem>
+#include <unistd.h>
 #include "move_rec.h"
 
 class upperhand: public Move_rec
@@ -13,8 +15,9 @@ class upperhand: public Move_rec
     Q_OBJECT
 public:
     upperhand(QWidget* parent = nullptr);
-    void salute(int distance, int duration);
-    void returnSalute(int distance, int duration);
+    virtual void salute();
+    virtual void returnSalute();
+    void timer();
 protected:
     void paintEvent(QPaintEvent*) override;
 };
