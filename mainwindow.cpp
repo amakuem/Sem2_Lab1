@@ -54,7 +54,7 @@ void MainWindow::on_pushButton_3_clicked()
     lowhand -> salute();
     timer = new QTimer();
     connect(timer, SIGNAL(timeout()), this, SLOT(slotTimerAlarm()));
-    timer -> start(3000);
+    timer -> start(2000);
 
     //timer -> start(3000);
     //QTimer::singleShot(2000, this);
